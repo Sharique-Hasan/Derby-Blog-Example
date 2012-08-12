@@ -1,0 +1,22 @@
+<topNav:>
+	<div class="navbar navbar-fixed-top">
+  	<div class="navbar-inner">
+   		<div class="container-fluid">
+    		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      		<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+      	</a>
+      	<a class="brand" href="#">Cool New Derby App</a>
+      	<div class="nav-collapse">
+					<ul class="nav">{{#each navItems}}<app:navItem>{{/}}</ul>
+      	</div><!--/.nav-collapse -->
+    	</div>
+  	</div>
+	</div>
+
+<subNav:>
+  <ul>{{#each navItems}}<app:navItem>{{/}}</ul>
+  
+<navItem:>
+	<li><a href="{{link}}">{{title}}</a></li>
